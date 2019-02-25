@@ -48,7 +48,8 @@ In order to define re-integrant module, you have to define re-frame handlers and
 Then you can initialize system as bellow.
 
 ```clojure:config.cljs
-(require '[integrant.core :as ig])
+(require '[integrant.core :as ig]
+         '[test-app.module.example-module])
 
 (ig/init {:test-app.module/example-module {}})
 ```
